@@ -1,3 +1,18 @@
-.header-contenido {
-  background: url("../../../images/ba1.jpg");
+.header-contenedor {
+  height: 60vh;
+  color: whitesmoke;
 }
+
+.header-background {
+  background-image: url("../../../images/tinified/ba1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+//no funciona
+.header-filter {
+  background-color: rgba(255, 255, 255, .2);
+  backdrop-filter: opacity(99%);
+}
+
+.header-contenido {}

@@ -6,6 +6,7 @@ Trabajo práctico de frontend con Bootstrap para el curso de Java Fullstack CaC.
 - Buscar componentes en página de Bootstrap
 - Organizar contenido en carpetas
 - Reducir tamaño de imágenes con Tinypng
+- Editar logo y crear favicon en formato svg
 - Armar esqueleto HTML
 - Descargar Bootstrap
 - Implementar archivos custom de css

@@ -1,4 +1,4 @@
 @import url("nav.css");
 @import url("header.css");
-@import "body.css";
-@import "footer.css";
+@import url("body.css");
+@import url("footer.css");
