@@ -25,3 +25,14 @@ Trabajo práctico de frontend con Bootstrap para el curso de Java Fullstack CaC.
 - Git y Github
 - Browser-sync
 - Firefox developer tools
+
+## Dificultades en el proceso
+### Con la tecnología
+- La planificación con vanilla CSS es diferente con Bootstrap
+
+### Con el contenido
+- Las imágenes de contenido y logos generaron trabajo extra al ser todos diferentes tamaños
+- El texto a también genera invertir tiempo en pensar otras formas de decir lo mismo
+
+## Conclusión
+A pesar de haber planificado previamente los pasos a seguir, no pude seguirlos en orden. Por momentos sentía que si no resolvía algo en el momento luego me olvidaría.
