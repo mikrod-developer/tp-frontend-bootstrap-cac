@@ -15,11 +15,11 @@ Trabajo práctico de frontend con Bootstrap para el curso de Java Fullstack CaC.
 ## Herramientas usadas
 ### Diseño
 - Penpot
+- GIMP
 
 ### Lenguajes
 - HTML
 - CSS
-- JavaScript
 
 ### Tecnología
 - Git y Github
@@ -29,6 +29,8 @@ Trabajo práctico de frontend con Bootstrap para el curso de Java Fullstack CaC.
 ## Dificultades en el proceso
 ### Con la tecnología
 - La planificación con vanilla CSS es diferente con Bootstrap
+- No conseguí hacer funcionar el navbar que ofrece la última versión de Bootstrap. Según lo que mencionan en foros la documentación de Bootstrap está desactualizada.
+- Bootstrap usa ´!important´ en muchas de sus reglas lo cual dificulta el poder sobrescribir reglas o pasarlas por encima.
 
 ### Con el contenido
 - Las imágenes de contenido y logos generaron trabajo extra al ser todos diferentes tamaños

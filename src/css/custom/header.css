@@ -1,13 +1,17 @@
-.header-contenedor {
-  max-width: 100%;
-  height: auto;
+.header-contenido {
+  height: 70vh;
+  width: auto;
   color: whitesmoke;
+  padding-top: 15dvh;
 }
 
 .header-background {
   background-image: url("../../../images/tinified/ba1.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+  background-position: center;
 }
 
-.header-contenido {}
+.filmina-oscura {
+  background-color: rgba(0, 0, 0, 0.6);
+}
