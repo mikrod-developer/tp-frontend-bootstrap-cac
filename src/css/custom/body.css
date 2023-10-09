@@ -12,9 +12,9 @@
   height: 20rem;
 }
 
-.tarjeta-texto {
-  text-overflow: ellipsis;
-}
+// .tarjeta-texto {
+//   text-overflow: ellipsis;
+// }
 
 .tarjeta-horizontal-tamanio {
   max-width: 100vw;

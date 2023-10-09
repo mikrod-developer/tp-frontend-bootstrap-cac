@@ -8,12 +8,13 @@
   <meta name="author" content="Mik Rod">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Conferencia BsAs</title>
-  <link rel="icon" type="image/x-icon" href="images/favicon/favicon_BA.svg">
-  <link rel="stylesheet" href="src/css/normalize/normalize.css">
+  <link rel="icon" type="image/x-icon" href="./images/favicon/favicon_BA.svg">
+  <link rel="stylesheet" type="text/css" href="./src/css/normalize/normalize.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="src/css/bootstrap/bootstrap-5.3.2-dist/css/bootstrap.min.css"> <!--fallback-->
-  <link rel="stylesheet" href="src/css/custom/main.css">
+  <link rel="stylesheet" type="text/css" href="./src/css/bootstrap/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  <!--fallback-->
+  <link rel="stylesheet" type="text/css" href="./src/css/custom/main.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
     defer></script>
@@ -21,56 +22,63 @@
 
 </head>
 
-<body>
-  <header class="header-contenedor">
+<body id="inicio" class="container-fluid p-0">
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <div class="header-logo">
-          <img class="logo" src="./images/logo/logo_codoacodo.svg" alt="Logo de Codo a Codo" />
-          <a class="navbar-brand" href="#">Conferencia Bs As</a>
-        </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#conoce-a-los-oradores">Los oradores</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#lugar-y-fecha">Lugar y fecha</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#convertite-en-orador">Convertite en orador</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Comprar tickets</a>
-            </li>
-          </ul>
-        </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex flex-row header-logo" href="#inicio">
+        <img class="logo" src="./images/logo/logo_codoacodo.svg" alt="Logo de Codo a Codo" />
+        Conferencia Bs As
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Expande y contrae los links de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-flex flex-row-reverse " id="navbarNav">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#conoce-a-los-oradores">Los oradores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#lugar-y-fecha">Lugar y fecha</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#convertite-en-orador">Convertite en orador</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Comprar tickets</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <section class="header-background header-filter header-contenido">
-      <h1 class="header-titulo">Conferencia Buenos Aires</h1>
-      <p class="header-texto">Por primera vez en Argentina. Un evento para compartir con nuestra comunidad el
-        conocimiento y experiencia de los expertos que están creando <strong>el futuro de Internet</strong>. Vení a
-        conocer a los oradores de primera, miembros del evento, otros estudiantes y al staff de Codo a Codo. ¡Te
-        esperamos!</p>
-      <button>Quiero ser orador</button>
-      <button>Comprar tickets</button>
+  <header class="container-fluid header-contenedor p-0">
+
+    <section class="header-background header-contenido">
+      <div class="">
+        <h1 class="display-1 header-titulo">Conferencia Bs As</h1>
+        <p class="header-texto">Por primera vez en Argentina. Un evento para compartir con
+          nuestra comunidad el
+          conocimiento y experiencia de los expertos que están creando <strong>el futuro de Internet</strong>. Vení a
+          conocer a los oradores de primera, miembros del evento, otros estudiantes y al staff de Codo a Codo. ¡Te
+          esperamos!
+        </p>
+      </div>
+      <div class="row  justify-content-end">
+        <button type="button" class="btn btn-border bg-transparent">Quiero ser orador</button>
+        <button type="button" class="btn bg-success">Comprar tickets</button>
+      </div>
     </section>
 
   </header>
 
-  <main>
+  <main class="container-fluid mb-5">
 
-    <h2 id="conoce-a-los-oradores" class="display2 text-center tarjetas-titulo">Conoce a los oradores</h2>
+    <h2 id="conoce-a-los-oradores" class="display-2 text-center tarjetas-titulo">Conoce a los oradores</h2>
     <section class="card-group d-flex justify-content-evenly tarjetas-contenedor">
       <!--modificar tamaño-->
       <article id="tarjeta1">
@@ -112,7 +120,7 @@
             alt="Retrato de Steve Jobs sosteniendo el iPhone 1">
           <div class="card-body">
             <div class="btn-group" role="group" aria-label="Grup de botones básicos">
-              <button type="button" class="btn btn-warning btn-sm">JavaScript</button>
+              <button type="button" class="btn btn-warning btn-sm">Swift</button>
               <button type="button" class="btn btn-danger btn-sm">React</button>
             </div>
             <h5 class="card-title p-2">Steve Jobs</h5>
@@ -296,8 +304,8 @@
     </section>
   </main>
 
-  <footer>
-    <nav class="nav justify-content-center footer-links">
+  <footer class="bg-body-tertiary footer-contenedor" data-bs-theme="dark">
+    <nav class="nav navbar-expand-lg justify-content-center footer-links">
       <a class="nav-link" href="#">Preguntas frecuentes</a>
       <a class="nav-link" href="#">Contáctanos</a>
       <a class="nav-link" href="#">Estudiantes</a>
