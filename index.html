@@ -10,71 +10,99 @@
   <title>Conferencia BsAs</title>
   <link rel="icon" type="image/x-icon" href="./images/favicon/favicon_BA.svg">
   <link rel="stylesheet" type="text/css" href="./src/css/normalize/normalize.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./src/css/bootstrap/bootstrap-5.3.2-dist/css/bootstrap.min.css">
-  <!--fallback-->
   <link rel="stylesheet" type="text/css" href="./src/css/custom/main.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <script src="./src/css/bootstrap/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" defer></script> <!--fallback-->
+  <!-- bootstrap.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+  <!-- <script src="./src/css/bootstrap/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" defer></script> -->
   <script src="./src/js/nav.js" defer></script>
 
 </head>
 
 <body id="inicio" class="container-fluid p-0">
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand d-flex flex-row header-logo" href="#inicio">
-        <img class="logo" src="./images/logo/logo_codoacodo.svg" alt="Logo de Codo a Codo" />
-        Conferencia Bs As
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Expande y contrae los links de navegación">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse d-flex flex-row-reverse " id="navbarNav">
-        <ul class="navbar-nav ">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#conoce-a-los-oradores">Los oradores</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#lugar-y-fecha">Lugar y fecha</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#convertite-en-orador">Convertite en orador</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Comprar tickets</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+	<!--   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark"> -->
+	<!--   <div class="container-fluid"> -->
+	<!-- 	  <a class="navbar-brand header-logo" href="#inicio"> <!-- agregar link absoluto--> -->
+	<!-- 		<img class="logo" src="./images/logo/logo_codoacodo.svg" alt="Logo de Codo a Codo" /> -->
+	<!-- 		Conferencia Bs As -->
+	<!-- 	</a> -->
+	<!-- 	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Expande y contrae los links de navegación"> -->
+	<!-- 	  <span class="navbar-toggler-icon"></span> -->
+	<!-- 	</button> -->
+	<!-- 	<div class="collapse navbar-collapse" id="navbarNav"> -->
+	<!-- 	  <ul class="navbar-nav me-auto mb-2 mb-lg-0"> -->
+	<!-- 		<li class="nav-item"> -->
+	<!-- 		  <a class="nav-link " href="#inicio">La conferencia</a> -->
+	<!-- 		</li> -->
+	<!-- 		<li class="nav-item"> -->
+	<!-- 		  <a class="nav-link" href="#conoce-a-los-oradores">Los oradores</a> -->
+	<!-- 		</li> -->
+	<!-- 		<li class="nav-item"> -->
+	<!-- 		  <a class="nav-link" href="#lugar-y-fecha">Lugar y fecha</a> -->
+	<!-- 		</li> -->
+	<!-- 		<li class="nav-item"> -->
+	<!-- 		  <a class="nav-link" href="#convertite-en-orador">Convertite en orador</a> -->
+	<!-- 		</li> -->
+	<!-- 		<li class="nav-item"> -->
+	<!-- 		  <a class="nav-link" href="/src/html/procesar-ventas.html">Comprar tickets</a> -->
+	<!-- 		</li> -->
+	<!-- 	  </ul> -->
+	<!-- 	</div> -->
+	<!--   </div> -->
+	<!-- </nav> -->
 
+	<nav class="navbar navbar-dark bg-dark fixed-top">
+	  <div class="container-fluid">
+		<a class="navbar-brand header-logo" href="https://mikrod-developer.github.io/tp-frontend-bootstrap-cac/">
+		    <img class="logo" src="./images/logo/logo_codoacodo.svg" alt="Logo de Codo a Codo" />
+			Conferencia Bs As
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="offcanvas offcanvas-end text-bg-dark text-center fs-4" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+		  <div class="offcanvas-header">
+			  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú</h5>
+			<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		  </div>
+		  <div class="offcanvas-body">
+			<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+			  <li class="nav-item">
+				<a class="nav-link" href="#inicio">La conferencia</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#conoce-a-los-oradores">Los oradores</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#lugar-y-fecha">Lugar y fecha</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#convertite-en-orador">Convertite en orador</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="/src/html/procesar-ventas.html">Comprar tickets</a>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</nav>
 
   <header class="header-background mb-5 p-0 container-fluid">
 
     <section class="filmina-oscura header-contenido">
       <div class="d-flex flex-column align-items-end ">
         <h1 class="col-md-6 display-1 header-titulo">Conferencia <br> Bs As</h1>
-        <p class="col-md-6 header-texto">Por primera vez en Argentina. Un evento para compartir con
-          nuestra comunidad el
-          conocimiento y experiencia de los expertos que están creando <strong>el futuro de Internet</strong>. Vení a
-          conocer a los oradores de primera, miembros del evento, otros estudiantes y al staff de Codo a Codo. ¡Te
-          esperamos!
+        <p class="col-md-6 header-texto">Por primera vez en Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando <strong>el futuro de Internet</strong>. Vení a conocer a los oradores de primera, miembros del evento, otros estudiantes y al staff de Codo a Codo. ¡Te esperamos!
         </p>
       </div>
       <div class="btn-group d-flex flex-column align-items-end" role="group" aria-label="Grup de botones básicos">
         <div class="row justify-content-end col-md-6 mx-0">
-          <button type="button" class="btn btn-border col-md-6 bg-transparent btn-outline-light">Quiero ser
-            orador</button>
-          <button type="button" class="btn col-md-6 bg-success text-white">Comprar tickets</button>
+			<a href="#convertite-en-orador" role="button" class="btn btn-border col-md-6 bg-transparent btn-outline-light">Quiero ser orador</a>
+          <a href="src/html/procesar-ventas.html" role="button" class="btn col-md-6 bg-success text-white">Comprar tickets</a>
         </div>
       </div>
     </section>
@@ -95,23 +123,9 @@
               <button type="button" class="btn btn-danger btn-sm">Startups</button>
             </div>
             <h5 class="card-title p-2">Ada Lovelace</h5>
-            <p class="card-text tarjeta-texto">Sugirió el uso de tarjetas perforadas como método de entrada de
-              información
-              e instrucciones a la máquina analítica. Además introdujo una notación para escribir programas,
-              principalmente
-              basada en el dominio que Ada tenía sobre el texto de Luigi Menabrea de 1842 (que comentó personalmente
-              completándolo con anotaciones que son más extensas que el texto mismo) sobre el funcionamiento del telar
-              de
-              Jacquard así como de la máquina analítica de Babbage. Es reseñable además su mención sobre la existencia
-              de
-              ceros o estado neutro en las tarjetas perforadas siendo que las tarjetas representaban para la máquina de
-              Babbage números decimales y no binarios (8 perforaciones equivaldrían entonces a 8 unidades).
+            <p class="card-text tarjeta-texto">Sugirió el uso de tarjetas perforadas como método de entrada de información e instrucciones a la máquina analítica. Además introdujo una notación para escribir programas, principalmente basada en el dominio que Ada tenía sobre el texto de Luigi Menabrea de 1842 (que comentó personalmente completándolo con anotaciones que son más extensas que el texto mismo) sobre el funcionamiento del telar de Jacquard así como de la máquina analítica de Babbage. Es reseñable además su mención sobre la existencia de ceros o estado neutro en las tarjetas perforadas siendo que las tarjetas representaban para la máquina de Babbage números decimales y no binarios (8 perforaciones equivaldrían entonces a 8 unidades).
 
-              <br> También introdujo la posibilidad de que la máquina analítica no fuera solo capaz de realizar cálculos
-              matemáticos, sino también de, entre muchas otras cosas, «producir arte» y componer música, literatura...
-              de
-              hecho, afirmaba que el invento sería capaz de realizar cualquier cosa que se le pidiera, siempre y cuando
-              supiéramos cómo ordenárselo.
+              <br> También introdujo la posibilidad de que la máquina analítica no fuera solo capaz de realizar cálculos matemáticos, sino también de, entre muchas otras cosas, «producir arte» y componer música, literatura... de hecho, afirmaba que el invento sería capaz de realizar cualquier cosa que se le pidiera, siempre y cuando supiéramos cómo ordenárselo.
             </p>
           </div>
         </div>
