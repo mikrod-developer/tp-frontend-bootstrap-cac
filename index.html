@@ -60,29 +60,29 @@
 	  </div>
 	</nav>
 
-  <header class="header-background mb-5 p-0 container-fluid">
+  <header class="header-background my-5 p-0 container-fluid">
 
-    <section class="filmina-oscura header-contenido">
-      <div class="d-flex flex-column align-items-end ">
+    <section class="filmina-oscura header-contenido col-sm px-5 vh-100">
+      <div class="d-flex flex-column align-items-end">
         <h1 class="col-md-6 display-1 header-titulo">Conferencia <br> Bs As</h1>
         <p class="col-md-6 header-texto">Por primera vez en Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando <strong>el futuro de Internet</strong>. Vení a conocer a los oradores de primera, miembros del evento, otros estudiantes y al staff de Codo a Codo. ¡Te esperamos!
         </p>
       </div>
       <div class="btn-group d-flex flex-column align-items-end" role="group" aria-label="Grup de botones básicos">
         <div class="row justify-content-end col-md-6 mx-0">
-			<a href="#convertite-en-orador" role="button" class="btn btn-border col-md-6 bg-transparent btn-outline-light">Quiero ser orador</a>
-          <a href="src/html/procesar-ventas.html" role="button" class="btn col-md-6 bg-success text-white">Comprar tickets</a>
+		  <a href="#convertite-en-orador" role="button" class="btn btn-border col-md-6 bg-transparent btn-outline-light">Quiero ser orador</a>
+		  <a href="src/html/procesar-ventas.html" role="button" class="btn col-md-6 bg-success text-white">Comprar tickets</a>
         </div>
       </div>
     </section>
 
   </header>
 
-  <main class="container-fluid mb-5">
+  <main class="container-fluid my-5">
 
-    <h2 id="conoce-a-los-oradores" class="display-2 text-center tarjetas-titulo">Conoce a los oradores</h2>
-    <section class="card-group d-flex justify-content-evenly tarjetas-contenedor mx-auto px-5">
-      <article id="tarjeta1">
+    <section id="conoce-a-los-oradores" class="card-group d-flex row justify-content-center tarjetas-contenedor mx-auto my-5 min-vh-100">
+      <h2  class="display-2 text-center tarjetas-titulo mt-5">Conoce a los oradores</h2>
+      <article class="col-auto p-3" id="tarjeta1">
         <div class="card tarjeta-tamanio overflow-scroll">
           <img src="./images/tinified/Ada-recortada.jpeg" class="card-img-top"
             alt="Retrato en blanco y negro de Ada Lovelace">
@@ -100,7 +100,7 @@
         </div>
       </article>
 
-      <article id="tarjeta2">
+      <article class="col-auto p-3" id="tarjeta2">
         <div class="card tarjeta-tamanio overflow-scroll">
           <img src="./images/tinified/Steve-recortado.jpeg" class="card-img-top"
             alt="Retrato de Steve Jobs sosteniendo el iPhone 1">
@@ -122,7 +122,7 @@
         </div>
       </article>
 
-      <article id="tarjeta3">
+      <article class="col-auto p-3" id="tarjeta3">
         <div class="card tarjeta-tamanio overflow-scroll">
           <img src="./images/tinified/Linus-recortado.jpg" class="card-img-top"
             alt="Retrato de Linus Torvalds sonriente en la conferencia LinuxCon 2014">
@@ -166,7 +166,8 @@
 
     </section>
 
-    <section id="lugar-y-fecha" class="carousel-tarjetas-horizontales mb-5">
+    <section id="lugar-y-fecha" class="carousel-tarjetas-horizontales d-flex row my-5 min-vh-100">
+      <h2 class="display-2 text-center tarjetas-titulo mt-5">Lugar y fecha</h2>
       <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
 
@@ -247,8 +248,8 @@
       </div>
     </section>
 
-    <h2 class="display-2 text-center tarjetas-titulo">Convertite en orador</h2>
-    <section id="convertite-en-orador">
+    <section id="convertite-en-orador" class="carousel-tarjetas-horizontales d-flex row my-5 min-vh-100">
+      <h2 class="display-2 text-center tarjetas-titulo mt-5">Convertite en orador</h2>
 
       <form class="d-flex container-fluid justify-content-center">
         <fieldset>
