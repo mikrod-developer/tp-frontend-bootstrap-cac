@@ -10,14 +10,14 @@
   <title>Comprá tu ticket</title>
   <link rel="icon" type="image/x-icon" href="../../images/favicon/favicon_BA.svg">
   <link rel="stylesheet" type="text/css" href="../css/normalize/normalize.css">
+  <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./src/css/bootstrap/bootstrap-5.3.2-dist/css/bootstrap.min.css">
-  <!--fallback-->
   <link rel="stylesheet" type="text/css" href="../css/custom/main.css">
+  <!-- bootstrap.js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <!-- <script src="../css/bootstrap/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" defer></script> <!--fallback--> -->
+    crossorigin="anonymous" defer></script>
   <script src="../js/nav.js" defer></script>
 
 </head>
@@ -61,7 +61,7 @@
 	  </div>
 	</nav>
 
-  <header class="container-fluid mb-5 mx-auto pt-5 d-flex">
+  <header class="container-fluid my-5 mx-auto pt-5 d-flex">
 
 	  <section class="row">
 	  	<h2 class="display-2 text-center tarjetas-titulo">Venta de tickets</h2>
@@ -75,10 +75,10 @@
 
   <main class="container-fluid mb-5">
 
-    <section class="card-group row tarjetas-contenedor justify-content-center">
+    <section class="card-group d-flex row tarjetas-contenedor justify-content-center mx-auto my-5">
 
       <article class="col-md-3" id="tarjeta1">
-        <div class="card">
+        <div class="card border-primary">
           <div class="card-body">
 			  <h4 class="card-title text-center">Estudiante</h4>
 			  <p class="card-text text-center fw-semibold fs-5">80%</p>
@@ -87,7 +87,7 @@
       </article>
 
       <article class="col-md-3" id="tarjeta2">
-        <div class="card">
+        <div class="card border-info">
           <div class="card-body">
 			  <h4 class="card-title text-center">Trainee</h4>
 			  <p class="card-text text-center fw-semibold fs-5">50%</p>
@@ -96,7 +96,7 @@
       </article>
 
       <article class="col-md-3" id="tarjeta3">
-        <div class="card">
+        <div class="card border-success">
           <div class="card-body">
 			  <h4 class="card-title text-center">Junior</h4>
 			  <p class="card-text text-center fw-semibold fs-5">15%</p>
@@ -155,9 +155,9 @@
             </div>
           </div>
 
-		  <div class="btn-group g-0 mb-3 d-flex " role="group" aria-label="Botones del formulario">
-			  <button type="reset" class="btn btn-success">Borrar</button>
-			  <button type="submit" class="btn btn-success">Resumen</button>
+		  <div class="btn-group d-flex row g-0 mb-3" role="group" aria-label="Botones del formulario">
+			  <button type="reset" class="btn btn-secondary col-6">Borrar</button>
+			  <button type="submit" class="btn btn-success col-6">Resumen</button>
 		  </div>
 
         </fieldset>
@@ -166,7 +166,7 @@
     </section>
   </main>
 
-  <footer class="bg-body-tertiary footer-contenedor" data-bs-theme="dark">
+  <footer class="bg-body-tertiary d-flex row footer-contenedor py-4 min-vh-auto mx-0" data-bs-theme="dark">
     <nav class="nav navbar-expand-lg justify-content-center footer-links">
       <a class="nav-link" href="#">Preguntas frecuentes</a>
       <a class="nav-link" href="#">Contactanos</a>
@@ -176,6 +176,7 @@
       <a class="nav-link" href="#">Privacidad</a>
       <a class="nav-link" href="#">Términos y condiciones</a>
     </nav>
+	<p class="small text-muted text-center pt-5 fst-italic"><small>Mik &#9786; 2023</small></p>
   </footer>
 </body>
 

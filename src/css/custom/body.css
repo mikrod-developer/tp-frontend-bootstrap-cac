@@ -1,20 +1,7 @@
-.tarjetas-contenedor {
-  padding-bottom: 1rem;
-}
-
 .tarjeta-tamanio {
-  width: 18rem;
-  height: calc(18rem * 1.8);
-  // overflow: hidden;
+  width: 17rem;
+  height: calc(18rem * 2);
 }
-
-.tarjeta-imagen-tamanio {
-  height: 20rem;
-}
-
-// .tarjeta-texto {
-//   text-overflow: ellipsis;
-// }
 
 .tarjeta-horizontal-tamanio {
   max-width: 100vw;

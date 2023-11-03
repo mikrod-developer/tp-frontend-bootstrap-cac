@@ -16,8 +16,8 @@
   <link rel="stylesheet" type="text/css" href="./src/css/custom/main.css">
   <!-- bootstrap.js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
-  <!-- <script src="./src/css/bootstrap/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" defer></script> -->
   <script src="./src/js/nav.js" defer></script>
+  <script src="./src/js/modal.js" defer></script>
 
 </head>
 
@@ -80,24 +80,45 @@
 
   <main class="container-fluid my-5">
 
-    <section id="conoce-a-los-oradores" class="card-group d-flex row justify-content-center tarjetas-contenedor mx-auto my-5 min-vh-100">
+    <section id="conoce-a-los-oradores" class="card-group d-flex row justify-content-center mx-auto my-5 pt-5 min-vh-100">
       <h2  class="display-2 text-center tarjetas-titulo mt-5">Conoce a los oradores</h2>
       <article class="col-auto p-3" id="tarjeta1">
         <div class="card tarjeta-tamanio overflow-scroll">
           <img src="./images/tinified/Ada-recortada.jpeg" class="card-img-top"
             alt="Retrato en blanco y negro de Ada Lovelace">
-          <div class="card-body">
+          <div class="card-body ">
             <div class="btn-group" role="group" aria-label="Grup de botones básicos">
               <button type="button" class="btn btn-secondary btn-sm">Negocios</button>
               <button type="button" class="btn btn-danger btn-sm">Startups</button>
             </div>
             <h5 class="card-title p-2">Ada Lovelace</h5>
-            <p class="card-text tarjeta-texto">Sugirió el uso de tarjetas perforadas como método de entrada de información e instrucciones a la máquina analítica. Además introdujo una notación para escribir programas, principalmente basada en el dominio que Ada tenía sobre el texto de Luigi Menabrea de 1842 (que comentó personalmente completándolo con anotaciones que son más extensas que el texto mismo) sobre el funcionamiento del telar de Jacquard así como de la máquina analítica de Babbage. Es reseñable además su mención sobre la existencia de ceros o estado neutro en las tarjetas perforadas siendo que las tarjetas representaban para la máquina de Babbage números decimales y no binarios (8 perforaciones equivaldrían entonces a 8 unidades).
-
-              <br> También introdujo la posibilidad de que la máquina analítica no fuera solo capaz de realizar cálculos matemáticos, sino también de, entre muchas otras cosas, «producir arte» y componer música, literatura... de hecho, afirmaba que el invento sería capaz de realizar cualquier cosa que se le pidiera, siempre y cuando supiéramos cómo ordenárselo.
-            </p>
+            <p class="card-text">Sugirió el uso de tarjetas perforadas como método de entrada de información...</p>
+			<!-- Button trigger modal -->
+			<div class="d-flex justify-content-end">
+				<button type="button" class="btn btn-link link-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-tarjeta1">Leer más</button>
+			</div>
           </div>
         </div>
+			<!-- Modal -->
+			<div class="modal fade" id="modal-tarjeta1" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title fs-5" id="modalLabel1">Ada Lovelace</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				  </div>
+				  <div class="modal-body">
+					Sugirió el uso de tarjetas perforadas como método de entrada de información e instrucciones a la máquina analítica. Además introdujo una notación para escribir programas, principalmente basada en el dominio que Ada tenía sobre el texto de Luigi Menabrea de 1842 (que comentó personalmente completándolo con anotaciones que son más extensas que el texto mismo) sobre el funcionamiento del telar de Jacquard así como de la máquina analítica de Babbage. Es reseñable además su mención sobre la existencia de ceros o estado neutro en las tarjetas perforadas siendo que las tarjetas representaban para la máquina de Babbage números decimales y no binarios (8 perforaciones equivaldrían entonces a 8 unidades).
+
+              <br> También introdujo la posibilidad de que la máquina analítica no fuera solo capaz de realizar cálculos matemáticos, sino también de, entre muchas otras cosas, «producir arte» y componer música, literatura... de hecho, afirmaba que el invento sería capaz de realizar cualquier cosa que se le pidiera, siempre y cuando supiéramos cómo ordenárselo.
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+
       </article>
 
       <article class="col-auto p-3" id="tarjeta2">
@@ -111,15 +132,40 @@
             </div>
             <h5 class="card-title p-2">Steve Jobs</h5>
             <p class="card-text tarjeta-texto">Jobs en 1993 centró la estrategia de su compañía en la producción de
-              software, cambiando el nombre de la empresa por el de Next Software Inc. Uno de las decisiones más
-              llamativas fue la venta de equipos NeXT construidos alrededor de los microprocesadores Intel 486 y SPARC.
-              <br> Apple Computer anunció el 20 de diciembre de 1996 la adquisición de NeXT Software por 400 millones de
-              dólares con el fin de actualizar el sistema operativo de las computadoras Macintosh, después del fracaso
-              de la compañía con Copland, un proyecto que nunca llegó a terminarse. Así, Steve Jobs volvió a formar
-              parte de la compañía Apple.
-            </p>
+              software...
+			</p>
+			<!-- Button trigger modal -->
+			<div class="d-flex justify-content-end">
+				<button type="button" class="btn btn-link link-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-tarjeta2">Leer más</button>
+			</div>
           </div>
         </div>
+
+			<!-- Modal -->
+			<div class="modal fade" id="modal-tarjeta2" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title fs-5" id="modalLabel2">Steve Jobs</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				  </div>
+				  <div class="modal-body">
+						Jobs en 1993 centró la estrategia de su compañía en la producción de
+					  software, cambiando el nombre de la empresa por el de Next Software Inc. Uno de las decisiones más
+					  llamativas fue la venta de equipos NeXT construidos alrededor de los microprocesadores Intel 486 y SPARC.
+					  <br> 
+					  Apple Computer anunció el 20 de diciembre de 1996 la adquisición de NeXT Software por 400 millones de
+					  dólares con el fin de actualizar el sistema operativo de las computadoras Macintosh, después del fracaso
+					  de la compañía con Copland, un proyecto que nunca llegó a terminarse. Así, Steve Jobs volvió a formar
+					  parte de la compañía Apple.
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+
       </article>
 
       <article class="col-auto p-3" id="tarjeta3">
@@ -132,43 +178,66 @@
               <button type="button" class="btn btn-danger btn-sm">Rust</button>
             </div>
             <h5 class="card-title p-2">Linus Torvalds</h5>
-            <p class="card-text tarjeta-texto">A la edad de 21 años, con un año de experiencia programando (en C), ya
-              conocía lo suficiente del sistema operativo Minix como para tomar prestadas algunas ideas y empezar un
-              proyecto personal. Basándose en Design of the Unix Operating System, publicado por Maurice J. Bach en
-              1986, creó una implementación que ejecuta cualquier tipo de programa, pero sobre una arquitectura de
-              ordenadores compatibles, IBM/PC.
-              <br>
-              Este proyecto personal desembocó el 5 de octubre de 1991 con el anuncio​ de la primera versión de Linux
-              capaz de ejecutar BASH (Bourne Again Shell) y el compilador conocido como GCC (GNU Compiler Collection).
-              <br>
-              En enero de 1992 se adoptó la Licencia Pública General (GPL) para Linux. Esta añade libertades de uso a
-              Linux totalmente opuestas a las del software propietario, permitiendo su modificación, redistribución,
-              copia y uso ilimitado. Este modelo de licencia facilita lo que es conocido como el modelo de desarrollo de
-              bazar, que ha dado estabilidad y funcionalidad sin precedentes a este sistema operativo.
-              <br>
-              En 1997 recibió los premios 1997 Nokia Foundation Award de Nokia y Lifetime Achievement Award at Uniforum
-              Pictures. Ese mismo año finalizó los estudios superiores (1988-1997) tras un decenio como estudiante e
-              investigador en la Universidad de Helsinki, coordinando el desarrollo del núcleo del sistema operativo
-              desde 1992.
-              <br>
-              Trabajó en Transmeta desde febrero de 1997 hasta junio de 2003. Actualmente trabaja para el Open Source
-              Development Labs en Beaverton, Oregón. Sólo el 2 % del código del Linux actual está escrito por él, pero,
-              además de su paternidad, en su persona sigue descansando la dirección de la gestión núcleo del sistema
-              operativo.
-              <br>
-              En 2005 creó Git, un software de control de versiones, pensando en la eficiencia y la confiabilidad del
-              mantenimiento de versiones de aplicaciones cuando estas tienen un gran número de archivos de código
-              fuente.
-            </p>
+            <p class="card-text tarjeta-texto">A la edad de 21 años, con un año de experiencia programando (en C), ya conocía lo suficiente...
+			</p>
+			<!-- Button trigger modal -->
+			<div class="d-flex justify-content-end">
+				<button type="button" class="btn btn-link link-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-tarjeta3">Leer más</button>
+			</div>
           </div>
         </div>
+
+			<!-- Modal -->
+			<div class="modal fade" id="modal-tarjeta3" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title fs-5" id="modalLabel3">Linus Torvalds</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				  </div>
+				  <div class="modal-body">
+						A la edad de 21 años, con un año de experiencia programando (en C), ya
+					  conocía lo suficiente del sistema operativo Minix como para tomar prestadas algunas ideas y empezar un
+					  proyecto personal. Basándose en Design of the Unix Operating System, publicado por Maurice J. Bach en
+					  1986, creó una implementación que ejecuta cualquier tipo de programa, pero sobre una arquitectura de
+					  ordenadores compatibles, IBM/PC.
+					  <br>
+					  Este proyecto personal desembocó el 5 de octubre de 1991 con el anuncio​ de la primera versión de Linux
+					  capaz de ejecutar BASH (Bourne Again Shell) y el compilador conocido como GCC (GNU Compiler Collection).
+					  <br>
+					  En enero de 1992 se adoptó la Licencia Pública General (GPL) para Linux. Esta añade libertades de uso a
+					  Linux totalmente opuestas a las del software propietario, permitiendo su modificación, redistribución,
+					  copia y uso ilimitado. Este modelo de licencia facilita lo que es conocido como el modelo de desarrollo de
+					  bazar, que ha dado estabilidad y funcionalidad sin precedentes a este sistema operativo.
+					  <br>
+					  En 1997 recibió los premios 1997 Nokia Foundation Award de Nokia y Lifetime Achievement Award at Uniforum
+					  Pictures. Ese mismo año finalizó los estudios superiores (1988-1997) tras un decenio como estudiante e
+					  investigador en la Universidad de Helsinki, coordinando el desarrollo del núcleo del sistema operativo
+					  desde 1992.
+					  <br>
+					  Trabajó en Transmeta desde febrero de 1997 hasta junio de 2003. Actualmente trabaja para el Open Source
+					  Development Labs en Beaverton, Oregón. Sólo el 2 % del código del Linux actual está escrito por él, pero,
+					  además de su paternidad, en su persona sigue descansando la dirección de la gestión núcleo del sistema
+					  operativo.
+					  <br>
+					  En 2005 creó Git, un software de control de versiones, pensando en la eficiencia y la confiabilidad del
+					  mantenimiento de versiones de aplicaciones cuando estas tienen un gran número de archivos de código
+					  fuente.
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+
       </article>
 
     </section>
 
-    <section id="lugar-y-fecha" class="carousel-tarjetas-horizontales d-flex row my-5 min-vh-100">
+    <section id="lugar-y-fecha" class="carousel-tarjetas-horizontales d-flex row my-5 pt-5 min-vh-100 bg-light-subtle">
       <h2 class="display-2 text-center tarjetas-titulo mt-5">Lugar y fecha</h2>
-      <div id="carouselExample" class="carousel slide">
+      <div id="carouselExample" class="carousel slide p-3">
         <div class="carousel-inner">
 
           <div class="carousel-item active">
@@ -205,7 +274,10 @@
                     <h5 class="card-title">La Plata - Noviembre</h5>
                     <p class="card-text">La Plata es símbolo de una insigne y prolífica academia. La física, la
                       astronomía y la biología, han sido indudablemente los campos que los científicos de esta ciudad
-                      han dominado, por encima de sus pares en el país y la región. </p>
+                      han dominado, por encima de sus pares en el país y la región.
+					  <br>
+					  En cuanto a instituciones académicas refiere, se destaca ampliamente la Universidad Nacional de La Plata (UNLP), una de las más importantes universidades nacionales del país junto con la UNC y la UBA. Fue la tercera en fundarse en la Argentina, siguiendo a la de Córdoba y la de Buenos Aires. La UNLP posee 120 000 alumnos.
+					</p>
                     <button type="button" class="btn btn-secondary btn-sm">Conoce más</button>
                   </div>
                 </div>
@@ -248,7 +320,7 @@
       </div>
     </section>
 
-    <section id="convertite-en-orador" class="carousel-tarjetas-horizontales d-flex row my-5 min-vh-100">
+    <section id="convertite-en-orador" class="carousel-tarjetas-horizontales d-flex row my-5 pt-5 min-vh-100">
       <h2 class="display-2 text-center tarjetas-titulo mt-5">Convertite en orador</h2>
 
       <form class="d-flex container-fluid justify-content-center">
@@ -281,7 +353,9 @@
             </div>
           </div>
 
-          <button type="submit" class="btn btn-success col-auto">Enviar</button>
+		  <div class="mb-3 d-flex">
+			  <button type="submit" class="btn btn-success col-12">Enviar</button>
+		  </div>
 
         </fieldset>
       </form>
