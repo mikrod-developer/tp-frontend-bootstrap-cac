@@ -18,7 +18,6 @@ function actualizarTotal() {
 	const totalAPagar = calcularTotal(cantidad, categoria);
 
 	totalAPagarOutput.textContent = totalAPagar.toFixed(2);
-	;
 }
 
 actualizarTotal();

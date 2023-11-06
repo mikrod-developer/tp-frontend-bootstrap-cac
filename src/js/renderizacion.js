@@ -6,19 +6,17 @@ export function renderizarTarjetas () {
 	const tarjetas = document.querySelectorAll("#tarjetas-ventas article");
 	
 	//renderizar precio
-	precio.value = precioBase;
+	precio.textContent = precioBase;
 
 	//renderizar tarjetas
 	let i = 0;
-	for (const key in descuentos) {
-		const h4Elemento = tarjetas[i].querySelector("h4");
-		const pElemento = tarjetas[i].querySelector("p");
-
-		if(h4Elemento && pElemento){
-			h4Elemento.textContent = key;
-			pElemento.textContent = (descuentos[key] * 100) + "%";
+	for (const descuento in descuentos) {
+		if(i < tarjetas.length){
+			const h4Elemento = tarjetas[i].querySelector("h4");
+			const pElemento = tarjetas[i].querySelector("p");
+			h4Elemento.textContent = descuento;
+			pElemento.textContent = (descuentos[descuento] * 100) + "%";
+			i++;
 		}
-		i++;
 	}
-	
 };

@@ -9,7 +9,7 @@ const offcanvas = new bootstrap.Offcanvas(document.getElementById("offcanvasDark
 
 //agrega un evento de click a cada enlace
 menuLinks.forEach(link => {
-	link.addEventListener("click", function () {
+	link.addEventListener("click", () => {
 		//cierra el offcanvas al hacer click en un enlace y desactiva el backdrop
 		offcanvas.hide();
 	});
